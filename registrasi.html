@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Latihan</title>
+</head>
+<body bgcolor="#f4f4f4">
+    <table width="100%" bgcolor="#007BFF" cellpadding="10">
+        <tr>
+            <td align="center"><a href="login.html" style="color: white; text-decoration: none; font-weight: bold;">Login</a></td>
+            <td align="center"><a href="biografi.html" style="color: white; text-decoration: none; font-weight: bold;">Biografi</a></td>
+            <td align="center"><a href="gambar.html" style="color: white; text-decoration: none; font-weight: bold;">Gambar</a></td>
+            <td align="center"><a href="registrasi.html" style="color: white; text-decoration: none; font-weight: bold;">Registrasi</a></td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <table align="center" border="1" cellpadding="10" width="400">
+        <tr>
+            <td colspan="2" align="center"><b>Form Registrasi</b></td>
+        </tr>
+        <form action="" method="post">
+            <tr>
+                <td>Username:</td>
+                <td><input type="text" name="Username" placeholder="Masukkan Username" required minlength="3"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="Email" placeholder="Masukkan email" required></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="Password" placeholder="Masukkan password" required minlength="6"></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin:</td>
+                <td>
+                    <input type="radio" name="kelamin" value="laki-laki"> Laki-Laki
+                    <input type="radio" name="kelamin" value="perempuan"> Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td>Alamat:</td>
+                <td><textarea name="Alamat" placeholder="Masukkan alamat" required rows="4"></textarea></td>
+            </tr>
+            <tr>
+                <td>Jurusan:</td>
+                <td>
+                    <select name="jurusan" required>
+                        <option value="">Pilih Jurusan</option>
+                        <option value="RPL">RPL</option>
+                        <option value="PGPAUD">PGPAUD</option>
+                        <option value="PGSD">PGSD</option>
+                        <option value="TEKKOM">TEKKOM</option>
+                        <option value="Multimedia">Multimedia</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir:</td>
+                <td><input type="date" name="ttl" required></td>
+            </tr>
+            <tr>
+                <td>Warna Favorit:</td>
+                <td><input type="color" name="color"></td>
+            </tr>
+            <tr>
+                <td>Unggah Foto:</td>
+                <td><input type="file" name="file" required></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>
